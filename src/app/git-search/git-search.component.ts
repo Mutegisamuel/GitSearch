@@ -7,10 +7,11 @@ import { GitsearchService } from '../gitsearch.service';
   styleUrls: ['./git-search.component.css']
 })
 export class GitSearchComponent implements OnInit {
+  profile:any[];
 
   constructor(private gitsearchservice: GitsearchService) {
     this.gitsearchservice.getProfileInfo().subscribe(profile => {
-      
+        this.profile=profile;
     })
 
    }
