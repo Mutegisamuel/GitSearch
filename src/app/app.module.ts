@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 
 import { GitsearchService} from './gitsearch.service';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { GitSearchComponent } from './git-search/git-search.component';
@@ -15,7 +16,8 @@ import { GitSearchComponent } from './git-search/git-search.component';
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    FormsModule
 
   ],
   providers: [GitsearchService],
